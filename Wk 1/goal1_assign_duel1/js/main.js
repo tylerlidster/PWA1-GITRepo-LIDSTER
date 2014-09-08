@@ -1,11 +1,12 @@
 /*
+
  Name: Tyler Lidster
  Date: 9.5.14
  Class & Section:  PWA1-01
  Comments: "goal1_assign_duel1"
  */
 /*
-Assignment 1
+AAssignment 1
 Part 1/3 of series
 */
 
