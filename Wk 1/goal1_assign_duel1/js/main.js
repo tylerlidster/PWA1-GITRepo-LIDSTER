@@ -37,8 +37,8 @@ Part 1/3 of series
             //random formula is - Math.floor(Math.random() * (max - min) + min);
             var minDamage1 = player1Damage * .5; //Create a variable for minDamage1 / Player 1
             var minDamage2 = player2Damage * .5; //Create a variable for minDamage2 / Player 2
-            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1); //Math.random generates a random number between 0 and 1 / (Maximum Damage - Minimum Damage)-mindamage1 / Create F1 variable
-            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2); //Equation will generate a number between min and max damage / (Maximum Damage - Minimum Damage)-mindamage2 / Create F2 variable
+            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1); //Math.random generates a random number between 0 and 1 / (Maximum Damage - Minimum Damage)-minDamage1 / Create F1 variable
+            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2); //Equation will generate a number between min and max damage / (Maximum Damage - Minimum Damage)-minDamage2 / Create F2 variable
 
             //inflict damage
             playerOneHealth-=f1; //Minus the damage inflicted from the random number created above / playerOneHealth -= f1
@@ -77,7 +77,7 @@ Part 1/3 of series
     };
 
     /*******  The program gets started below *******/
-    console.log('programs starts')
+    //console.log('programs starts')
     fight();    //Call the fight function
 
 })();
