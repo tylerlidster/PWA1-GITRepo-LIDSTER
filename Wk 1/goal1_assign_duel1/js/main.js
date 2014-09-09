@@ -71,7 +71,7 @@ Part 1/3 of series
             result =playerTwoName+" WINS!!!"; //Result is playerTwoName WINS!!!
         } else if (playerTwoHealth<1) //If only playerTwoHealth is less than one
         {
-            result = playerOneName+" WINS!!!"; //Result is playerTwoName WINS!!!
+            result = playerOneName+" WINS!!!"; //Result is playerOneName WINS!!!
         };
         return result; //Return the result after the conditional runs
     };
