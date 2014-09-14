@@ -36,10 +36,10 @@
       <file leaf-file-name="search.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5637065" vertical-offset="0" max-vertical-offset="1950">
-              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state vertical-scroll-proportion="2.2200773" vertical-offset="0" max-vertical-offset="1995">
+              <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
               <folding>
-                <marker date="1410731951000" expanded="true" signature="2593:2608" placeholder="..." />
+                <marker date="1410733115000" expanded="true" signature="2808:2823" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +70,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
+    <option name="x" value="672" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="874" />
@@ -119,7 +119,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="672" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -195,7 +195,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1995">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding>
-            <marker date="1410731951000" expanded="true" signature="2593:2608" placeholder="..." />
+            <marker date="1410733115000" expanded="true" signature="2808:2823" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -226,10 +226,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5637065" vertical-offset="0" max-vertical-offset="1950">
-          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        <state vertical-scroll-proportion="2.2200773" vertical-offset="0" max-vertical-offset="1995">
+          <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
           <folding>
-            <marker date="1410731951000" expanded="true" signature="2593:2608" placeholder="..." />
+            <marker date="1410733115000" expanded="true" signature="2808:2823" placeholder="..." />
           </folding>
         </state>
       </provider>

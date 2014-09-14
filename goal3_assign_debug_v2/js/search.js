@@ -5,7 +5,7 @@ Comments: "goal3_debug_search_2"
 */
 // Create privatized scope using a self-executing function
 (function(){
-
+    //console.log("1");
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var search; //DEFINE VARIABLE
     var resultsDIV = document.getElementById("results"),    //DEFINE VARIABLES
@@ -15,7 +15,7 @@ Comments: "goal3_debug_search_2"
 
 	// Validates search query
 	var validate = function(query){     //RUN-TIME ERROR : single = equal instead of double
-
+        //console.log("2");
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) === " "){
 			query = query.substring(1, query.length);
@@ -30,8 +30,9 @@ Comments: "goal3_debug_search_2"
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
 			return;
-		}
 
+		}
+        //console.log("3");
 		search(query);
 	};
 
@@ -43,7 +44,7 @@ Comments: "goal3_debug_search_2"
         var queryArray = query.split(" ");
         // array to store matched results from database.js
         var results = [];
-
+            //console.log("4");
         // loop through each index of db array
         for (var i = 0, j = db.length; i < j; i++) {
 
@@ -56,12 +57,13 @@ Comments: "goal3_debug_search_2"
             // save a lowercase variable of the search keyword
             for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {
                 dbItem = queryArray[ii].toLowerCase();
-
+                //console.log("5");
                 // is the keyword anywhere in the video title?
                 // If a match is found, push full db[i] into results array
                 var compare = dbItem.indexOf(dbItem);
                 if (compare !== -1) {
                     results.push(db[i]);
+                    //console.log("6");
                 }
 
             }
@@ -77,7 +79,7 @@ Comments: "goal3_debug_search_2"
         } else {
             showMatches(results);
         }
-
+            //console.log("7");
     };
 
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
@@ -87,6 +89,7 @@ Comments: "goal3_debug_search_2"
 			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
 		;
 		resultsDIV.innerHTML = html;
+        //console.log("8");
 	};
 
 	// Put matches into page as paragraphs with anchors
@@ -114,7 +117,7 @@ Comments: "goal3_debug_search_2"
 		};
 		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
 	};
-
+        //console.log("9");
 	// The onsubmit event will be reviewed in upcoming Course Material.
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function() {
