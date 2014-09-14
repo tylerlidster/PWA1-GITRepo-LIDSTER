@@ -36,7 +36,7 @@ Comments: "goal3_debug_search_2"
 	};
 
 	// Finds search matches
-	var search = function(query)
+	var search = function(query){     //SYNTAX ERROR : NEEDED OPENING CURLY BRACE
 
 		// split the user's search query string into an array
 		var queryArray = query.join(" ");
@@ -113,13 +113,13 @@ Comments: "goal3_debug_search_2"
 
 	// The onsubmit event will be reviewed in upcoming Course Material.
 	// THE LINE DIRECTLY BELOW IS CORRECT
-	document.forms[0].onsubmit = function(){
-		var query = searchInput.value;
-		validqte(query);
+	document.forms[0].onsubmit = function() {
+        var query = searchInput.value;
+        validqte(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
-		return false;
-	;
+        return false;
+    }; //SYNTAX ERROR : Needed a closing curly brace
 
 })();
