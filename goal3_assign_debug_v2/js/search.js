@@ -16,12 +16,12 @@ Comments: "goal3_debug_search_2"
 	var validate = function(query){     //RUN-TIME ERROR : single = equal instead of double
 
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
+		while(query.charAt(0) === " "){    //REFERENCE ERROR : Needed ===
 			query = query.substring(1, query.length);
 		};
-		while(query.charAt(query.length-1) === ""){
-			query = query.substring(0, query.length-1);
-		;
+		while(query.charAt(query.length-1) === "") {
+            query = query.substring(0, query.length - 1);
+        };  //SYNTAX ERROR : Close while loop using curly brace
 
 		// Check search length, must have 3 characters
 		if(query.length < 3){
@@ -39,32 +39,34 @@ Comments: "goal3_debug_search_2"
 	var search = function(query){     //SYNTAX ERROR : NEEDED OPENING CURLY BRACE
 
 		// split the user's search query string into an array
-		var queryArray = query.join(" ");
+		var queryArray = query.split(" ");
 
 		// array to store matched results from database.js
 		var results = [];
 
 		// loop through each index of db array
-		for(var i=0, j=db.length; i<j; i++){
+		for(var i=0, j=db.length; i<j; i++) {
 
-			// each db[i] is a single video item, each title ends with a pipe "|"
-			// save a lowercase variable of the video title
-			var dbTitleEnd = db[i].indexOf('|');
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
+            // each db[i] is a single video item, each title ends with a pipe "|"
+            // save a lowercase variable of the video title
+            var dbTitleEnd = db[i].indexOf('|');
+            var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
 
-			// loop through the user's search query words
-			// save a lowercase variable of the search keyword
-			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
-				var qitem = queryArray[ii].tolowercase();
+            // loop through the user's search query words
+            // save a lowercase variable of the search keyword
+            for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {
+                var qitem = queryArray[ii].tolowercase();
 
-				// is the keyword anywhere in the video title?
-				// If a match is found, push full db[i] into results array
-				var compare = dbitem.indexOf(qitem);
-				if(compare !== -1){
-					results.push(db[i]);
-				};
-			;
-		;
+                // is the keyword anywhere in the video title?
+                // If a match is found, push full db[i] into results array
+                var compare = dbitem.indexOf(qitem);
+                if (compare !== -1) {
+                    results.push(db[i]);
+                }
+                ;
+            }
+            ;    //SYNTAX ERROR : closing curly braces
+        ;}      //SYNTAX ERROR : closing curly braces
 
 		results.sort();
 
@@ -115,7 +117,7 @@ Comments: "goal3_debug_search_2"
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function() {
         var query = searchInput.value;
-        validqte(query);
+        validate(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
