@@ -1,11 +1,8 @@
-
 /*Name: Tyler Lidster
 Date: 9.14.14
 Class & Section:  PWA1-01
 Comments: "goal3_debug_search_2"
 */
-
-
 // Create privatized scope using a self-executing function
 (function(){
 
@@ -16,7 +13,7 @@ Comments: "goal3_debug_search_2"
 	;
 
 	// Validates search query
-	var validate = function(query){     //Changed the q to a in validate, single equal instead of double
+	var validate = function(query){     //RUN-TIME ERROR : single = equal instead of double
 
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
@@ -28,7 +25,7 @@ Comments: "goal3_debug_search_2"
 
 		// Check search length, must have 3 characters
 		if(query.length < 3){
-			alert("Your search query is too small, try again.);
+			alert("Your search query is too small, try again."); //SYNTAX ERROR : Close string by adding second parentheses
 
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();

@@ -36,10 +36,10 @@
       <file leaf-file-name="search.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23166023" vertical-offset="90" max-vertical-offset="1995">
-              <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
+            <state vertical-scroll-proportion="0.21235521" vertical-offset="0" max-vertical-offset="1890">
+              <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
               <folding>
-                <marker date="1410722756000" expanded="true" signature="2252:2267" placeholder="..." />
+                <marker date="1410723156000" expanded="true" signature="2296:2311" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -228,7 +228,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1995">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding>
-            <marker date="1410722756000" expanded="true" signature="2252:2267" placeholder="..." />
+            <marker date="1410723156000" expanded="true" signature="2296:2311" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -259,10 +259,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23166023" vertical-offset="90" max-vertical-offset="1995">
-          <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
+        <state vertical-scroll-proportion="0.21235521" vertical-offset="0" max-vertical-offset="1890">
+          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
           <folding>
-            <marker date="1410722756000" expanded="true" signature="2252:2267" placeholder="..." />
+            <marker date="1410723156000" expanded="true" signature="2296:2311" placeholder="..." />
           </folding>
         </state>
       </provider>
