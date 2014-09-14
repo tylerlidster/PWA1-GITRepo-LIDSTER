@@ -39,7 +39,7 @@ Comments: "goal3_debug_search_2"
 	var search = function(query){     //SYNTAX ERROR : NEEDED OPENING CURLY BRACE
 
 		// split the user's search query string into an array
-		var queryArray = query.split(" ");
+		var queryArray = query.split(" ");    //SYNTAX ERROR : query.split is the correct string to use
 
 		// array to store matched results from database.js
 		var results = [];
