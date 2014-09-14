@@ -14,7 +14,7 @@ Comments: "goal3_debug_search_2"
 	;
 
 	// Validates search query
-	var validate = function(query){     //RUN-TIME ERROR : single = equal instead of double
+	var validate = function(query){
         //console.log("2");
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) === " "){
