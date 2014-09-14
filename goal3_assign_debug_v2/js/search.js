@@ -7,7 +7,8 @@ Comments: "goal3_debug_search_2"
 (function(){
 
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
-	var resultsDIV = document.getElementById("results"),
+	var search; //DEFINE VARIABLE
+    var resultsDIV = document.getElementById("results"),    //DEFINE VARIABLES
 		searchInput = document.forms[0].search,
 		currentSearch = ''
 	;
@@ -16,67 +17,68 @@ Comments: "goal3_debug_search_2"
 	var validate = function(query){     //RUN-TIME ERROR : single = equal instead of double
 
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) === " "){    //REFERENCE ERROR : Needed ===
+		while(query.charAt(0) === " "){
 			query = query.substring(1, query.length);
-		};
+		}
 		while(query.charAt(query.length-1) === "") {
             query = query.substring(0, query.length - 1);
-        };  //SYNTAX ERROR : Close while loop using curly brace
+        }
 
 		// Check search length, must have 3 characters
 		if(query.length < 3){
-			alert("Your search query is too small, try again."); //SYNTAX ERROR : Close string by adding second parentheses
-
+			alert("Your search query is too small, try again.");
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
 			return;
-		};
+		}
 
 		search(query);
 	};
 
 	// Finds search matches
-	var search = function(query){     //SYNTAX ERROR : NEEDED OPENING CURLY BRACE
+        search = function (query) {
 
-		// split the user's search query string into an array
-		var queryArray = query.split(" ");    //SYNTAX ERROR : query.split is the correct string to use
+        // split the user's search query string into an array
 
-		// array to store matched results from database.js
-		var results = [];
+        var queryArray = query.split(" ");
+        // array to store matched results from database.js
+        var results = [];
 
-		// loop through each index of db array
-		for(var i=0, j=db.length; i<j; i++) {
+        // loop through each index of db array
+        for (var i = 0, j = db.length; i < j; i++) {
 
             // each db[i] is a single video item, each title ends with a pipe "|"
             // save a lowercase variable of the video title
             var dbTitleEnd = db[i].indexOf('|');
-            var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
+            var dbItem = db[i].toLowerCase().substring(0, dbTitleEnd);
 
             // loop through the user's search query words
             // save a lowercase variable of the search keyword
             for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {
-                var qitem = queryArray[ii].tolowercase();
+                dbItem = queryArray[ii].toLowerCase();
 
                 // is the keyword anywhere in the video title?
                 // If a match is found, push full db[i] into results array
-                var compare = dbitem.indexOf(qitem);
+                var compare = dbItem.indexOf(dbItem);
                 if (compare !== -1) {
                     results.push(db[i]);
                 }
-                ;
+
             }
-            ;    //SYNTAX ERROR : closing curly braces
-        ;}      //SYNTAX ERROR : closing curly braces
 
-		results.sort();
 
-		// Check that matches were found, and run output functions
-		if(results.length = 0){
-			noMatch();
-		}else{
-			showMatches(results);
-		};
-	};
+        }
+
+        results.sort();
+
+        // Check that matches were found, and run output functions
+        if (results.length === 0) {
+            noMatch();
+        } else {
+            showMatches(results);
+        }
+
+    };
 
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
 	var noMatch = function(){
@@ -102,7 +104,7 @@ Comments: "goal3_debug_search_2"
 			// title of video ends with pipe
 			// pull the title's string using index numbers
 			titleEnd = results[i].indexOf('|');
-			title = results[i].subString(0, titleEnd);
+			title = results[i].substring(0, titleEnd);
 
 			// pull the video url after the title
 			url = results[i].substring(results[i].indexOf('|')+1, results[i].length);
@@ -122,6 +124,6 @@ Comments: "goal3_debug_search_2"
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
         return false;
-    }; //SYNTAX ERROR : Needed a closing curly brace
+    };
 
 })();
