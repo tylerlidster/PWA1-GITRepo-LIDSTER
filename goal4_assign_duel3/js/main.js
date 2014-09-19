@@ -1,9 +1,9 @@
 /*
 
  Name: Tyler Lidster
- Date: 9.5.14
+ Date: 9.19.14
  Class & Section:  PWA1-01
- Comments: "goal1_assign_duel1"
+ Comments: "goal4_assign_duel3"
  */
 /*
 AAssignment 2
