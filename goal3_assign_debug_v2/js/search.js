@@ -123,13 +123,13 @@ Comments: "goal3_debug_search_3"
 		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
 	};
 
-	// The onsubmit event will be reviewed in upcoming Course Material.
+	
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function() {
         var query = searchInput.value;
         validate(query);
 
-        // return false is needed for most events - this will be reviewed in upcoming course material
+
         // THE LINE DIRECTLY BELOW IS CORRECT
         return false;
     };
