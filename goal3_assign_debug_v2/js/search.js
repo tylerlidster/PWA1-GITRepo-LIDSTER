@@ -9,7 +9,7 @@ Comments: "goal3_debug_search_3"
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var search; //DEFINE VARIABLE
     var resultsDIV = document.getElementById("results"),    //DEFINE VARIABLES
-		searchInput = document.forms[0].search,
+		searchInput = document.forms[0].search,             //Define Variables
 		currentSearch = ''
 	;
 
@@ -17,11 +17,11 @@ Comments: "goal3_debug_search_3"
 	var validate = function(query){
 
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) === " "){
+		while(query.charAt(0) === " "){                     //while loop for search results
 			query = query.substring(1, query.length);
 		}
 		while(query.charAt(query.length-1) === "") {
-            query = query.substring(0, query.length - 1);
+            query = query.substring(0, query.length - 1);   //while loop for search results
         }
 
 		// Check search length, must have 3 characters
@@ -29,7 +29,7 @@ Comments: "goal3_debug_search_3"
 			alert("Your search query is too small, try again.");
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
-			return;
+			return;     //Call the function
 
 		}
 
@@ -41,12 +41,12 @@ Comments: "goal3_debug_search_3"
 
         // split the user's search query string into an array
 
-        var queryArray = query.split(" ");
+        var queryArray = query.split(" ");                      //split the search string into an array
         // array to store matched results from database.js
         var results = [];
 
         // loop through each index of db array
-        for (var i = 0, j = db.length; i < j; i++) {
+        for (var i = 0, j = db.length; i < j; i++) {                //for loop
 
             // each db[i] is a single video item, each title ends with a pipe "|"
             // save a lowercase variable of the video title
@@ -61,8 +61,8 @@ Comments: "goal3_debug_search_3"
                 // is the keyword anywhere in the video title?
                 // If a match is found, push full db[i] into results array
                 var compare = dbItem.indexOf(dbItem);
-                if (compare !== -1) {
-                    results.push(db[i]);
+                if (compare !== -1) {               //if compare is not equal to -1
+                    results.push(db[i]);            //push results
 
                 }
 
@@ -74,6 +74,9 @@ Comments: "goal3_debug_search_3"
         results.sort();
 
         // Check that matches were found, and run output functions
+        //If-else statement
+        //If the search results length is 0 or empty then there is not a match
+        //Else: show/display the matches
         if (results.length === 0) {
             noMatch();
         } else {
@@ -93,6 +96,7 @@ Comments: "goal3_debug_search_3"
 	};
 
 	// Put matches into page as paragraphs with anchors
+    //Display matched search result onto page in a last, main link large
 	var showMatches = function(results){
 
 		// THE NEXT 4 LINES ARE CORRECT.
@@ -102,6 +106,7 @@ Comments: "goal3_debug_search_3"
 		;
 
 		// loop through all the results search() function
+        //for loop
 		for(var i=0, j=results.length; i<j; i++){
 
 			// title of video ends with pipe
