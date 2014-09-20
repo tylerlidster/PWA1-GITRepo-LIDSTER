@@ -16,7 +16,7 @@ Part 3/3 of series
     console.log("FIGHT!");    //Display FIGHT!!! to the console
 
    //Define DOM Pieces
-    
+
     var fighter1_txt = document.querySelector("#kabal").querySelector("p");         //return kabal element
     var fighter2_txt = document.querySelector("#kratos").querySelector("p");         //return kratos element
     var round_txt = document.querySelector("heading");                               //return heading element
@@ -122,10 +122,10 @@ Part 3/3 of series
                 fighter2_txt.innerHTML = "";
 
                 //Disable the button - need the below if using addEventListener
-                button.removeEventListener("click", fight, false);
-                //button.disabled = true;
+                button.removeEventListener("click", fight, false); //loops until winnercheck returns true
+                button.disabled = true;
 
-                //button.oneclick = "return false";
+                button.oneclick = "return false";
 
                 document.querySelector('.buttonblue').innerHTML = 'DONE!!!';
 
