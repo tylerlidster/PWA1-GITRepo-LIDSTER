@@ -1,7 +1,7 @@
 /*Name: Tyler Lidster
-Date: 9.14.14
+Date: 9.19.14
 Class & Section:  PWA1-01
-Comments: "goal3_debug_search_2"
+Comments: "goal3_debug_search_3"
 */
 // Create privatized scope using a self-executing function
 (function(){
