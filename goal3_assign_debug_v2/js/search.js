@@ -32,7 +32,7 @@ Comments: "goal3_debug_search_2"
 			return;
 
 		}
-        
+
 		search(query);
 	};
 
