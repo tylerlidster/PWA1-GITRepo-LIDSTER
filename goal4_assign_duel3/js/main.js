@@ -16,22 +16,25 @@ Part 3/3 of series
     console.log("FIGHT!");    //Display FIGHT!!! to the console
 
    //Define DOM Pieces
-    var fighter1_txt = document.querySelector("#bw").querySelector("p");
-    var fighter2_txt = document.querySelector("#ww").querySelector("p");
-    var round_txt = document.querySelector("h5");
-    var button = document.getElementById("fight_btn");
+    
+    var fighter1_txt = document.querySelector("#kabal").querySelector("p");         //return kabal element
+    var fighter2_txt = document.querySelector("#kratos").querySelector("p");         //return kratos element
+    var round_txt = document.querySelector("heading");                               //return heading element
+    var button = document.getElementById("fight_btn");                          //return "fight_btn" element
 
     console.log();
 
     //Setup event listener for click event
     button.addEventListener("click", fight, false);
 
-    //Create an array of objects for 2 fighters
+    //Create an array of objects for both fighters
+    //Create variable for fighters
+    //Give values to name, damage and health for each fighter
     var fighters = [
         {
             name:'BlackWidow',
-            damage: 20,
-            health: 100
+            damage:20,
+            health:100
         },
         {
             name:'WonderWoman',
@@ -47,6 +50,7 @@ Part 3/3 of series
     var round = 1;          //Define global variable for fighter rounds
 
     //Initialize DOM innerHTML text for top of HTML page
+    //Text for top of display to show - name, round and health
     round_txt.innerHTML = "click FIGHT BUTTON to Start!";
     fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
     fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
@@ -108,6 +112,7 @@ Part 3/3 of series
             {
                 fighter1_txt.innerHTML = fighters[0].name + ":" + fighters[0].health;
                 fighter2_txt.innerHTML = fighters[1].name + ":" + fighters[1].health;
+
                 //round++; //Advance to the next round by adding one to the round
                 //alert(fighter[0]+":"+fighter1[2]+"  *ROUND "+round+" OVER"+"*  "+fighter2[0]+":"+fighter[2]); //Alert Player 1 and Player 2 of name, amount of health and ROUND # OVER
 
